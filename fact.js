@@ -16,14 +16,14 @@ function registrationNumbers(regs) {
     }
 
 
-    let filteredList1 = platein.filter(function (currentElement) {
-        return currentElement.startsWith('CA');
+    let filteredList1 = platein.filter(function (regPlates) { 
+        return regPlates.startsWith('CA');
     });
-    let filteredList2 = platein.filter(function (currentElement) {
-        return currentElement.startsWith('CJ');
+    let filteredList2 = platein.filter(function (regPlates) {
+        return regPlates.startsWith('CJ');
     });
-    let filteredList3 = platein.filter(function (currentElement) {
-        return currentElement.startsWith('CF');
+    let filteredList3 = platein.filter(function (regPlates) {
+        return regPlates.startsWith('CF');
     });
 
 

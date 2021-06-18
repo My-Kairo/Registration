@@ -15,7 +15,7 @@ if (localStorage['plates']) {
 
 var registrationInsta = registrationNumbers(list);
 
-function displayed(plateIn) {
+function displayed(plateIn) { 
 
     document.getElementById("display").innerHTML = "";
 
@@ -87,27 +87,27 @@ function remove() {
 addBtn.addEventListener('click', remove);
 
 
-let filteredList1 = list.filter(function (currentElement) {
-    return currentElement.startsWith('CA');
+let filteredList1 = list.filter(function (regPlates) {
+    return regPlates.startsWith('CA');
 });
-let filteredList2 = list.filter(function (currentElement) {
-    return currentElement.startsWith('CJ');
+let filteredList2 = list.filter(function (regPlates) {
+    return regPlates.startsWith('CJ');
 });
-let filteredList3 = list.filter(function (currentElement) {
-    return currentElement.startsWith('CF');
+let filteredList3 = list.filter(function (currregPlatesentElement) {
+    return regPlates.startsWith('CF');
 });
 
 
 function showed() {
     if (list.length > 0) {
-        let filteredList1 = list.filter(function (currentElement) {
-            return currentElement.startsWith('CA');
+        let filteredList1 = list.filter(function (regPlates) {
+            return regPlates.startsWith('CA');
         });
-        let filteredList2 = list.filter(function (currentElement) {
-            return currentElement.startsWith('CJ');
+        let filteredList2 = list.filter(function (regPlates) {
+            return regPlates.startsWith('CJ');
         });
-        let filteredList3 = list.filter(function (currentElement) {
-            return currentElement.startsWith('CF');
+        let filteredList3 = list.filter(function (regPlates) {
+            return regPlates.startsWith('CF');
         });
 
         var towns = document.querySelector(".slct1");
