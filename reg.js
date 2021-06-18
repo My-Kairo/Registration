@@ -93,7 +93,7 @@ let filteredList1 = list.filter(function (regPlates) {
 let filteredList2 = list.filter(function (regPlates) {
     return regPlates.startsWith('CJ');
 });
-let filteredList3 = list.filter(function (currregPlatesentElement) {
+let filteredList3 = list.filter(function (regPlates) {
     return regPlates.startsWith('CF');
 });
 
