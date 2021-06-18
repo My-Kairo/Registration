@@ -153,11 +153,7 @@ function allPlatesList() {
 }
 showAllBtn.addEventListener('click', allPlatesList);
 
-
-
-
 window.onload = displayed(list);
-
 
 function conditions3() {
 
