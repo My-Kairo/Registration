@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+body {
+    text-decoration: none;
+    background-image: url(./pascal-meier-1uVCTVSn-2o-unsplash.jpg);
+}
+
+.container {
+    box-sizing: content-box;
+    box-shadow: 5px 4px rgb(15, 15, 13);
+    padding: 7px;
+    background-image: url(./pascal-meier-1uVCTVSn-2o-unsplash.jpg);
+    /* background-color: rgb(243, 218, 78); */
+    background-attachment: fixed;
+    background-position: inherit;
+    background-clip: content-box;
+    width: 45%;
+    border-radius: 1%;
+    height: 650px;
+    font-family: cursive;
+    margin: auto;
+    border: 1px solid rgb(73, 73, 41);
+    /* border: none; */
+    /* width: 80%; */
+    /* height: 90vh; */
+    text-align: center;
+}
+
+p {
+    color: rgb(190, 192, 98);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.plates {
+    border: 3px outset rgb(190, 197, 96);
+    outline: 0;
+    height: 25px;
+    width: 90%;
+    background: rgb(243, 232, 76);
+    align-self: center;
+}
+
+h1 {
+    color: rgb(239, 243, 30);
+    padding: 2%;
+    font-size: 34px;
+    font-family: 'Architects Daughter', cursive;
+}
+
+h2 {
+    text-align: center;
+    font-style: italic;
+    color: rgb(245, 248, 74);
+    font-size: 25px;
+}
+    font-family: 'Architects Daughter', cursive;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    background-color: rgb(230, 243, 43);
+    border: solid;
+    border-radius: 6px;
+    width: 15%;
+    margin: 2px;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: rgb(241, 239, 71);
+    border: none;
+    border-radius: 50%;
+    border: rgb(110, 109, 30);
+    width: auto;
+    color: #101109;
+    text-align: center;
+    font-size: 28px;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.show {
+    border: 5px solid hsl(60, 52%, 24%);
+    width: 200px;
+}
+.show:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.showAll {
+    border: 5px solid rgb(131, 131, 41);
+    width: 200px;
+}
+.showAll:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+.buttons {
+    display: inline-flex;
+    margin-top: 20px;
+    border: rgb(67, 68, 5);
+}
+.reset {
+    border: 5px solid rgb(124, 124, 40);
+    border-radius: 50%;
+    width: 200px;
+}
+
+.title {
+    font-size: 25px;
+    color: rgb(241, 232, 94);
+    font-family: 'Architects Daughter', cursive;
+}
+
+.add {
+    background-color: rgb(184, 181, 53);
+    border-radius: 50%;
+    color: black;
+    border: 5px solid rgb(101, 102, 37);
+    width: 16%;
+    transition-duration: 0.4s;
+    text-align: center;
+    font-family: 'Merienda', cursive;
+}
+
+.add.reset.show.showAll:hover {
+    background-color: rgb(62, 241, 71);
+    color: rgb(7, 7, 7);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.add.showAll.show.reset span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.add.showAll.show.reset span:after {
+    /* content: '\00bb'; */
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.add.reset.show.showAll:hover span {
+    padding-right: 20px;
+}
+
+.add.showAll.show.reset:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+#error {
+    color: red;
+    font-size: 35px;
+}
+
+select {
+    padding: 10px;
+    padding-right: 8px;
+    background: rgb(243, 232, 85);
+    font-size: 18px;
+}
+
+@media (max-width:600px) {
+    h1 {
+        font-size: 25px;
+    }
+    .add {
+        background-color: white;
+        border-radius: 50%;
+        color: black;
+        border: 5px solid orange;
+        width: 20%;
+        transition-duration: 0.4s;
+        text-align: center;
+        font-family: 'Merienda', cursive;
+    }
+}
+
+@media (max-width:480px) {
+    h1 {
+        font-size: 22px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .add {
+        background-color: white;
+        border-radius: 50%;
+        color: black;
+        border: 5px solid orange;
+        width: 25%;
+        transition-duration: 0.4s;
+        text-align: center;
+        font-family: 'Merienda', cursive;
+    }
+    .buttons {
+        display: block;
+        margin-top: 0;
+    }
+    button {
+        width: 30%;
+        font-size: 15px;
+    }
+    .show {
+        margin-top: 90px;
+    }
+    .slct1 {
+        font-size: 15px;
+    }
+    body {
+        height: 120vh;
+    }
+    .plates {
+        width: 50%;
+    }
+    .title {
+        font-size: 20px;
+    }
+}
